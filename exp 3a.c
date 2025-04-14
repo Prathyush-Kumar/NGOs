@@ -43,17 +43,18 @@ int main(){
                     producer();
                 }
                 else{
-                    break;
+                    printf("buffer is full!\n");
                 }
+                break;
             case 2:
                 if(mutex==1 && full>0){
                     consumer();
                 }
                 else{
-                    break;
+                    printf("buffer is empty!\n");
                 }
+                break;
             case 3:
-                printf("wrong input!");
                 exit(0);
                 
                 
